@@ -1,0 +1,283 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./images/fondo.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos generales para el encabezado */
+header {
+    background-color: transparent;
+    color: rgb(7, 126, 206);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+header img.Home-icon {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+}
+
+header img.icon-left {
+    position: absolute;
+    left: 370px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+}
+
+header img.icon-right {
+    position: absolute;
+    right: 390px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+}
+
+header img.U-icon{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+}
+
+header:hover {
+    background-color: #ffffff;
+}
+
+nav a {
+    color: rgb(7, 126, 206);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos generales para el contenido de las secciones */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-item img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #333;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+}
+
+.image-item p {
+    margin-top: 40px;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+.seccion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#seccion-description{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#seccion-description h2,
+#seccion-description p{
+    margin: 0 auto; /* Añadido para centrar los elementos */
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: left; /* Alinea el texto a la izquierda dentro del contenedor centrado */
+    font-family: 'Comic Sans MS', cursive;
+    padding-left: 20px; /* Añadida sangría al texto */
+}
+
+
+/* Contenedor de informacion medidas y mas */
+#info-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#info-container h2,
+#info-container p{
+    margin: 0 auto; /* Añadido para centrar los elementos */
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: left; /* Alinea el texto a la izquierda dentro del contenedor centrado */
+    font-family: 'Comic Sans MS', cursive;
+    line-height: 2.0; /* Interlineado */
+    padding-left: 30px; /* Añadida sangría al texto */
+}
+
+
+
+/* Estilos específicos para el formulario y la descripción de la sección */
+/* Opiniones */
+#seccion1-image-container,
+#seccion1-description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#opiniones-container {
+    margin-top: 20px;
+    border-radius: 10px; /* Agregado un borde redondeado */
+    overflow: hidden; /* Añadido para evitar que las esquinas redondeadas se vean afectadas por bordes internos */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadido un suave efecto de sombra */
+}
+
+#opiniones-list {
+    border: 1px solid #cccccc00;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1; /* Agregado para que la lista de opiniones ocupe el espacio restante */
+}
+
+.opinion {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.opinion p {
+    margin: 5px 0;
+}
+
+#opinion-form-container {
+    max-width: 300px; /* Ajusta el ancho máximo del formulario */
+    margin-left: 20px; /* Agregado para separar el formulario del lado izquierdo */
+    border: 1px solid #aaa; /* Agregado un borde diferente */
+    border-radius: 10px; /* Agregado un borde redondeado */
+    padding: 20px; /* Aumenta el espacio alrededor del formulario */
+}
+
+#opinion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin: auto;
+}
+
+#opinion-form label {
+    margin-bottom: 5px;
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    font-family: 'Georgia', serif; /* Cambiado a una fuente más formal */
+}
+
+#opinion-form input,
+#opinion-form textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho teniendo en cuenta el padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el relleno y el borde en el ancho total */
+    font-family: 'Georgia', serif; /* Cambiado a una fuente más formal */
+}
+
+/* Nuevo estilo para el botón de opinión */
+#opinion-form button.btn {
+    z-index: 1; /* Añadido para asegurarse de que el botón esté encima del contenedor */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    position: relative;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    color: #070707;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Georgia', serif; /* Cambiado a una fuente más formal */
+}
+
+#opinion-form button.btn::after,
+#opinion-form button.btn::before {
+    border: 0;
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+    border-radius: 50%;
+}
+
+#opinion-form button.btn::before {
+    background-color: #005a8e;
+    top: -0.75rem;
+    left: 0.5rem;
+    animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+
+#opinion-form button.btn::after {
+    background-color: #007ece;
+    top: 3rem;
+    left: 13rem;
+    animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+
+#opinion-form button.btn:hover {
+    color: white;
+}
+
+#opinion-form button.btn:hover::before,
+#opinion-form button.btn:hover::after {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    animation: none;
+}
+
+#opinion-form button.btn:hover::after {
+    left: 0rem;
+}
+
+#opinion-form button.btn:hover::before {
+    top: 0.5rem;
+    left: 0.35rem;
+}
+
+/* Modal estilos */
+
+.eliminar-icon {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+

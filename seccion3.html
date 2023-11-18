@@ -1,0 +1,110 @@
+<!-- seccion3.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/3/Dropboxicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Dropbox</h1>
+        <img src="./images/Secciones/3/Dropboxicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="seccion3">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="seccion3-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/3/Dropbox.png" alt="Descripción sección 3">
+                <h2><i>Porque tus archivos merecen una casa más fresca que una carpeta aburrida.</i></h2>
+            </div>
+        </section>
+
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Creada por Drew Houston y Arash Ferdowsi, Dropbox es una nube elegante y fácil de usar.
+                Con una capacidad inicial de 2 GB (ampliable mediante referencias y actividades promocionales), 
+                es la elección de más de 600 millones de personas y empresas para almacenar y compartir archivos.</p>
+        </section>
+
+        <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>Dropbox...</h2>
+            <p>Es una plataforma de almacenamiento en la nube que destaca por su simplicidad y accesibilidad. 
+                Permite a los usuarios almacenar, compartir y sincronizar archivos de manera eficiente. Su interfaz intuitiva facilita la colaboración en tiempo real, 
+                especialmente a través de la función Paper, que permite la creación de documentos de forma conjunta. Además, Dropbox se integra sin problemas con diversas
+                 aplicaciones de productividad, mejorando la eficiencia en el flujo de trabajo. La seguridad no se queda atrás, ya que los usuarios pueden controlar los permisos 
+                 de acceso a archivos y contar con medidas de protección robustas.<br>
+                <b> Ventajas de Dropbox:</b>
+
+                 Facilidad de uso: Dropbox es conocido por su interfaz de usuario intuitiva y fácil de usar, lo que facilita la gestión de archivos y carpetas.
+                 
+                 Colaboración en tiempo real: Ofrece funciones de colaboración en tiempo real, lo que permite a los usuarios trabajar de manera conjunta en documentos compartidos.
+                 
+                 Sincronización automática: Los archivos se sincronizan automáticamente en todos los dispositivos conectados, asegurando que siempre tengas la versión más reciente.
+                 
+                 Integración con otras aplicaciones: Se integra bien con muchas aplicaciones y servicios de terceros, lo que facilita la conexión con otras herramientas que puedas utilizar.
+                 
+                 Versatilidad de plataformas: Dropbox es compatible con una amplia gama de plataformas, incluyendo Windows, macOS, Linux, Android e iOS.
+                 
+                 Funciones de recuperación de archivos: Ofrece opciones de recuperación de archivos para restaurar versiones anteriores de documentos durante un período de tiempo determinado.<br>
+                 
+                 <b>Desventajas de Dropbox:</b>
+                 
+                 Almacenamiento gratuito limitado: Aunque Dropbox ofrece una cantidad limitada de almacenamiento gratuito, puede ser menos generoso en comparación con algunos otros servicios.
+                 
+                 Costos adicionales por almacenamiento adicional: Al igual que otros servicios, puede requerir pagos adicionales si necesitas más espacio de almacenamiento.
+                 
+                 Seguridad y cifrado: Aunque Dropbox implementa medidas de seguridad, algunos usuarios pueden tener preocupaciones sobre el cifrado y la privacidad de sus archivos.
+                 
+                 Niveles de permisos limitados: Las opciones de control de permisos pueden ser más limitadas en comparación con algunos competidores, lo que podría ser un inconveniente para la gestión detallada de accesos.
+                 
+                 Dependencia de la conexión a Internet: Como con otros servicios en la nube, se necesita una conexión a Internet para acceder a los archivos almacenados en Dropbox.
+                 
+                 Competencia fuerte: Con la presencia de otros servicios de almacenamiento en la nube, Dropbox enfrenta una competencia fuerte, y algunos usuarios pueden optar por otras opciones según sus necesidades específicas</p>
+
+                 
+            <!-- Agregar más contenido según sea necesario -->
+        </div>
+
+                <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion3-script.js"></script>
+</body>
+</html>

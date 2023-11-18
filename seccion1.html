@@ -1,0 +1,110 @@
+<!-- seccion1.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nombre+de+la+Fuente" />
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/1/Driveicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Google Drive</h1>
+        <img src="./images/Secciones/1/Driveicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="seccion1">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="seccion1-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/1/Drive.png" alt="Descripción Sección 1">
+                <h2><i>Donde tus archivos se toman un café y charlan sobre tu día.</i></h2>
+            </div>
+        </section>
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Creada por Google, Google Drive ofrece un robusto servicio de almacenamiento en la nube.
+                Con la capacidad de almacenar hasta 15 GB de datos de forma gratuita, es ampliamente utilizado por más de mil millones de personas para colaborar
+                 y compartir archivos de manera eficiente.</p>
+        </section>
+
+
+                <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>Google Drive...</h2>
+            <p>Es una plataforma de almacenamiento en la nube que ofrece a los usuarios la capacidad de almacenar, compartir 
+                y acceder a archivos desde cualquier lugar con conexión a Internet. Una de sus características distintivas es la 
+                colaboración en tiempo real, que permite a varios usuarios editar documentos simultáneamente. Integrado con aplicaciones 
+                como Google Docs y Google Sheets, facilita la creación y edición de contenido directamente en la plataforma. Además, proporciona opciones
+                 avanzadas de seguridad, control de permisos para compartir archivos y una función de búsqueda eficiente. La accesibilidad desde múltiples dispositivos
+                 y la capacidad de sincronización hacen de Google Drive una herramienta versátil para la gestión de documentos y la colaboración en equipo.<br>
+                 <b>Ventajas de Google Drive:</b>
+
+                 Acceso desde cualquier lugar: Puedes acceder a tus archivos desde cualquier dispositivo con conexión a Internet, lo que facilita el trabajo colaborativo y el acceso remoto.
+                 
+                 Colaboración en tiempo real: Permite la colaboración en tiempo real en documentos, hojas de cálculo y presentaciones, lo que facilita el trabajo en equipo.
+                 
+                 Integración con otras aplicaciones de Google: Se integra fácilmente con otras herramientas de Google, como Gmail, Google Docs, Google Sheets y Google Slides.
+                 
+                 Capacidad de almacenamiento generosa: Ofrece una cantidad significativa de almacenamiento gratuito y opciones para aumentar la capacidad de almacenamiento mediante planes de pago.
+                 
+                 Facilidad de uso: La interfaz es intuitiva y fácil de usar, lo que facilita la gestión de archivos y carpetas.
+                 
+                 Seguridad: Google Drive utiliza medidas de seguridad avanzadas, como el cifrado de extremo a extremo y la autenticación en dos pasos, para proteger tus archivos.
+                 
+                 Sincronización automática: Los archivos se sincronizan automáticamente entre dispositivos conectados a la cuenta de Google Drive.<br>
+                 
+                 <b>Desventajas de Google Drive:</b>
+                 
+                 Dependencia de la conexión a Internet: Se necesita una conexión a Internet para acceder a los archivos almacenados en Google Drive, lo que puede ser un inconveniente en áreas con conectividad limitada.
+                 
+                 Problemas de privacidad: Al ser un servicio en la nube, algunos usuarios pueden tener preocupaciones sobre la privacidad de sus datos almacenados en Google Drive.
+                 
+                 Limitaciones en la edición offline: Aunque es posible habilitar la edición offline, no todas las funciones de Google Drive están disponibles sin conexión.
+                 
+                 Costos adicionales por almacenamiento adicional: Aunque Google Drive ofrece una cantidad generosa de almacenamiento gratuito, es posible que necesites pagar si requieres más espacio del ofrecido de forma gratuita.
+                 
+                 Posibles problemas de compatibilidad: Algunos formatos de archivo pueden tener problemas de compatibilidad al abrirse o editarse en Google Drive.</p>
+            <!-- Agregar más contenido según sea necesario -->
+        </div>
+
+            <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion1-script.js"></script>
+</body>
+</html>

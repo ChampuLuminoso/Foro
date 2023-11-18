@@ -1,0 +1,110 @@
+<!-- seccion4.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/4/Onedriveicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Microsoft OneDrive</h1>
+        <img src="./images/Secciones/4/Onedriveicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="seccion4">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="seccion4-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/4/Onedrive.png" alt="Descripción sección 4">
+                <h2><i>Donde cada archivo tiene su propia ventana al mundo digital.</i></h2>
+            </div>
+        </section>
+
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Creado por Microsoft, OneDrive es la nube integrada en el ecosistema Windows.
+                 Ofreciendo 5 GB de almacenamiento gratuito y estrecha integración con Office, es la elección 
+                 preferida para más de 250 millones de usuarios que buscan sincronización perfecta y colaboración eficiente.</p>
+        </section>
+
+        <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>OneDrive...</h2>
+            <p>El servicio de almacenamiento en la nube de Microsoft, se destaca por su integración profunda 
+                con el ecosistema de productos de Microsoft. Ofrece a los usuarios la capacidad de almacenar, sincronizar
+                 y compartir archivos, con la ventaja adicional de una estrecha colaboración con aplicaciones como Microsoft Word,
+                  Excel y PowerPoint. La funcionalidad de coedición en tiempo real facilita la colaboración en documentos. Además,
+                   OneDrive proporciona opciones avanzadas de seguridad, incluido el cifrado y la autenticación en dos pasos. Su integración 
+                   con Windows 10 y la suite de Office lo convierte en una opción poderosa para aquellos que dependen de herramientas de Microsoft
+                    en su flujo de trabajo diario. La opción de almacenamiento adicional a través de Microsoft 365 y la capacidad de acceder a archivos 
+                    desde cualquier dispositivo refuerzan su atractivo como solución de almacenamiento en la nube.<br>
+                    <b>Ventajas de OneDrive:</b>
+
+                    Integración con Microsoft Office: OneDrive está integrado de manera estrecha con Microsoft Office, facilitando la creación, edición y colaboración en documentos de Word, Excel y PowerPoint directamente en la nube.
+                    
+                    Almacenamiento generoso con Microsoft 365: Los usuarios de Microsoft 365 suelen obtener un generoso espacio de almacenamiento en OneDrive como parte de su suscripción, lo que puede ser beneficioso para aquellos que ya utilizan otras aplicaciones de Microsoft.
+                    
+                    Colaboración en tiempo real: Permite la colaboración en tiempo real en documentos compartidos, al igual que otros servicios en la nube.
+                    
+                    Versiones anteriores de archivos: Ofrece la capacidad de acceder a versiones anteriores de archivos para restaurar cambios o recuperar información.
+                    
+                    Compatibilidad multiplataforma: OneDrive es compatible con una variedad de plataformas, incluyendo Windows, macOS, iOS y Android, lo que facilita el acceso a tus archivos desde diferentes dispositivos.
+                    
+                    Seguridad avanzada: Ofrece funciones de seguridad avanzada, incluyendo la autenticación en dos pasos y el cifrado de datos en tránsito y en reposo.<br>
+                    
+                   <b> Desventajas de OneDrive:</b>
+                    
+                    Almacenamiento gratuito limitado: La cantidad de almacenamiento gratuito que ofrece OneDrive puede ser limitada en comparación con algunos otros servicios.
+                    
+                    Dependencia de la conexión a Internet: Al igual que con otros servicios en la nube, se requiere una conexión a Internet para acceder a los archivos almacenados en OneDrive.
+                    
+                    Problemas de sincronización: Algunos usuarios han experimentado problemas de sincronización, especialmente al trabajar con grandes cantidades de datos o archivos.
+                    
+                    Interfaz menos intuitiva: Para algunos usuarios, la interfaz de usuario de OneDrive puede ser menos intuitiva en comparación con otros servicios de almacenamiento en la nube.
+                    
+                    Integración limitada con servicios de terceros: Aunque OneDrive se integra bien con las aplicaciones de Microsoft, su integración con servicios de terceros puede ser menos amplia en comparación con algunos competidores.
+                </p>
+            <!-- Puedes agregar más contenido según sea necesario -->
+        </div>
+
+        <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion4-script.js"></script>
+</body>
+</html>

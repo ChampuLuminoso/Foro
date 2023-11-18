@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./images/fondo.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: transparent;
+    color: rgb(7, 126, 206);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #ffffff;
+}
+
+header img.Home-icon{
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+}
+
+header img.icon-left {
+    position: absolute;
+    left: 370px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+}
+
+header img.icon-right {
+    position: absolute;
+    right: 390px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+}
+
+header img.U-icon{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+}
+
+nav a {
+    color: rgb(7, 126, 206);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-item img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #333;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: saturate(100%); /* Cambia la saturación al 100% por defecto */
+    transition: transform 0.6s ease, filter 0.6s ease; /* Agregamos la transición para saturación */
+}
+
+.image-item p {
+    margin-top: 40px;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+    filter: saturate(400%); /* Cambia la saturación al 150% en hover */
+}
+
+.seccion {
+    margin-top: 20px;
+}
+
+.dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.dialog-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

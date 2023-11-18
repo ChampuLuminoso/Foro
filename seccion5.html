@@ -1,0 +1,105 @@
+<!-- seccion5.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/5/icloudicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Apple iCloud</h1>
+        <img src="./images/Secciones/5/icloudicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="seccion5">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="seccion5-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/5/icloud.png" alt="Descripción Sección 1">
+                <h2><i>Almacenamiento celestial para tus datos, ¡la manzana no cae lejos del árbol!</i></h2>
+            </div>
+        </section>
+
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Creado por Apple, iCloud es la nube diseñada para el ecosistema de productos Apple. 
+                Con 5 GB gratuitos y la capacidad de ampliar el almacenamiento, es la opción predilecta de más de 900 millones 
+                de usuarios para almacenar fotos, videos y documentos de manera sin problemas entre dispositivos.</p>
+        </section>
+
+        <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>Apple iCloud...</h2>
+            <p>iCloud, el servicio de almacenamiento en la nube de Apple, se distingue por su estrecha integración con los dispositivos de la marca. 
+                Ofrece un espacio seguro para almacenar fotos, videos, documentos y más, sincronizando automáticamente el contenido entre todos los dispositivos
+                 Apple del usuario. La funcionalidad de respaldo y restauración es una característica esencial, asegurando que los datos estén protegidos y accesibles 
+                 en todo momento. iCloud refuerza la seguridad mediante autenticación de dos factores y cifrado de extremo a extremo, proporcionando una capa adicional de protección
+                  para la privacidad del usuario.<br>
+                  <b>Ventajas de iCloud:</b>
+
+                  Integración con dispositivos Apple: iCloud está integrado de manera nativa en todos los dispositivos Apple, lo que facilita la sincronización de datos entre dispositivos como iPhone, iPad, Mac y Apple Watch.
+                  
+                  Almacenamiento para fotos y videos: Ofrece una función llamada "Fototecas" que almacena de forma eficiente fotos y videos en la nube, liberando espacio en los dispositivos locales.
+                  
+                  Copia de seguridad automática: iCloud realiza copias de seguridad automáticas de datos, como configuraciones, mensajes de texto, fotos y aplicaciones, lo que facilita la restauración de un dispositivo en caso de pérdida o cambio.
+                  
+                  Colaboración en documentos de iWork: Permite la colaboración en tiempo real en documentos creados con las aplicaciones de iWork, como Pages, Numbers y Keynote.
+                  
+                  Find My iPhone y Find My Friends: Ofrece funciones de localización como "Find My iPhone" y "Find My Friends" que ayudan a ubicar dispositivos perdidos y compartir ubicaciones con amigos y familiares.<br>
+                  
+                  <b>Desventajas de iCloud:</b>
+                  
+                  Almacenamiento gratuito limitado: La cantidad de almacenamiento gratuito proporcionada por iCloud es limitada, y los usuarios pueden necesitar pagar por planes adicionales si requieren más espacio.
+                  
+                  No es tan versátil en plataformas no Apple: Aunque hay aplicaciones de iCloud para Windows y una interfaz web, la integración y la experiencia suelen ser más fluidas en dispositivos Apple.
+                  
+                  Sincronización selectiva limitada: A diferencia de algunos otros servicios en la nube, iCloud puede tener limitaciones en la sincronización selectiva de carpetas y archivos, lo que significa que no puedes elegir específicamente qué archivos sincronizar.
+                  
+                  Integración limitada con servicios de terceros: En comparación con algunos competidores, iCloud puede tener una integración más limitada con servicios y aplicaciones de terceros.
+                  
+                  Dependencia de conexión a Internet: Al igual que otros servicios en la nube, se necesita una conexión a Internet para acceder a los archivos almacenados en iCloud.
+                </p>
+            <!-- Puedes agregar más contenido según sea necesario -->
+        </div>
+
+         <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion5-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- seccion2.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/2/Megaicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Mega</h1>
+        <img src="./images/Secciones/2/Megaicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="seccion2">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="seccion2-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/2/Mega.png" alt="Descripción sección 2">
+                <h2><i>Donde los archivos se vuelven superestrellas de la nube.</i></h2>
+            </div>
+        </section>
+
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Creada por el empresario Kim Dotcom, Mega es una nube informática que destaca por su enfoque en la seguridad, ofreciendo cifrado de extremo a extremo.
+                 Con una generosa oferta inicial de 50 GB de almacenamiento gratuito, Mega atrae a usuarios conscientes de la privacidad.</p>
+        </section>
+
+        <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>Mega...</h2>
+            <p>Es otro servicio de almacenamiento en la nube que ofrece diversas características. MEGA proporciona a los usuarios un espacio en la nube para almacenar y compartir archivos.
+                 Ofrece cifrado de extremo a extremo, lo que significa que los archivos están encriptados durante la transferencia y el almacenamiento, proporcionando un nivel adicional de 
+                 seguridad y privacidad. Los usuarios pueden compartir archivos y carpetas con otros, controlando los permisos de acceso. MEGA también destaca por su generosa cantidad de 
+                 almacenamiento gratuito y opciones de pago para capacidades adicionales. Su interfaz de usuario intuitiva 
+                y la capacidad de acceder a los archivos desde diferentes dispositivos hacen de MEGA una opción popular para el almacenamiento en la nube y la colaboración.<br>
+            
+                <b> Ventajas de MEGA:</b>
+
+                Cifrado de extremo a extremo: MEGA ofrece cifrado de extremo a extremo, lo que significa que tus archivos están encriptados antes de ser cargados y solo tú tienes la clave para descifrarlos.
+                
+                Generoso almacenamiento gratuito: Al igual que Google Drive, MEGA ofrece una cantidad significativa de almacenamiento gratuito con opciones para ampliar el espacio mediante planes de pago.
+                
+                Control sobre permisos: Puedes controlar los permisos de acceso a tus archivos, lo que te permite compartir archivos de manera selectiva y controlar quién puede ver o editar tus documentos.
+                
+                Aplicaciones para múltiples plataformas: MEGA proporciona aplicaciones para diversas plataformas, incluyendo Windows, macOS, Android e iOS, facilitando el acceso a tus archivos desde diferentes dispositivos.
+                
+                Velocidad de descarga rápida: MEGA ha sido elogiado por ofrecer velocidades de descarga rápidas para los usuarios.<br>
+                
+                <b>Desventajas de MEGA:</b>
+                
+                Publicidad y límites de ancho de banda: En la versión gratuita, MEGA puede mostrar anuncios y tiene límites de ancho de banda, lo que significa que hay restricciones en la cantidad de datos que puedes transferir en un período determinado.
+                
+                Dependencia de la conexión a Internet: Al igual que con otros servicios en la nube, necesitas una conexión a Internet para acceder a tus archivos almacenados en MEGA.
+                
+                Interfaz menos intuitiva: Algunos usuarios encuentran que la interfaz de usuario de MEGA es menos intuitiva en comparación con otros servicios de almacenamiento en la nube.
+                
+                Aplicaciones móviles menos pulidas: Algunos usuarios han informado que las aplicaciones móviles de MEGA pueden carecer de algunas funciones avanzadas y no ser tan pulidas como las de otros servicios.
+                
+                No tan ampliamente integrado como otros servicios: MEGA puede no estar tan integrado con otras aplicaciones y servicios en comparación con plataformas más grandes como Google Drive.
+
+            </p>
+            <!-- Agregar más contenido según sea necesario -->
+        </div>
+
+               <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion2-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- seccion6.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesseccion.css">
+    <link rel="icon" href="./images/ICON.png" type="image/x-icon">
+    <title>Foro: Proveedores de la nube</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/Iconohome.png" alt="Icono Home" class="Home-icon">
+        </a>
+        <img src="./images/Secciones/6/Amazonicon.png" alt="Icono Izquierdo" class="icon-left">
+        <h1>Amazon Drive</h1>
+        <img src="./images/Secciones/6/Amazonicon.png" alt="Icono Derecho" class="icon-right">
+        <img src="./images/IconoU.jpg" alt="Icono U" class="U-icon">
+        <nav>
+            <a href="seccion1.html">Google Drive</a>
+            <a href="seccion2.html">Mega</a>
+            <a href="seccion3.html">Dropbox</a>
+            <a href="seccion4.html">Microsoft OneDrive</a>
+            <a href="seccion5.html">Apple iCloud</a>
+            <a href="seccion6.html">Amazon Drive</a>
+        </nav>
+    </header>
+
+    <main id="Sección6">
+        <!-- Contenedor de la foto con texto descriptivo -->
+        <section id="Sección6-image-container" class="image-container">
+            <!-- Imagen y texto descriptivo se añadirán aquí dinámicamente -->
+            <div class="image-item">
+                <img src="./images/Secciones/6/Amazon.png" alt="Descripción Amazon Drive">
+                <h2><i>Donde tus archivos son tratados como paquetes Prime, ¡entrega express a la nube!</i></h2>
+            </div>
+        </section>
+
+        <!-- Espacio para describir la imagen -->
+        <section id="seccion-description" class="seccion">
+            <h2>Que es lo que vemos?</h2>
+            <p>Amazon Drive, parte del gigante del comercio electrónico, ofrece almacenamiento en la nube.
+                Con 5 GB gratuitos y opciones de expansión, es utilizado por millones de personas para almacenar archivos de forma confiable, 
+                respaldado por la infraestructura robusta de Amazon.</p>
+        </section>
+
+        <!-- Contenedor en el centro con información importante -->
+        <div id="info-container" class="seccion">
+            <h2>Amazon Drive...</h2>
+            <p>La solución de almacenamiento en la nube de Amazon, ofrece a los usuarios un espacio para almacenar
+                 fotos, videos y documentos. Su integración con otros servicios de Amazon, como Prime Photos, lo convierte en una 
+                 opción atractiva para aquellos que ya utilizan el ecosistema de Amazon. La capacidad de compartir archivos y carpetas 
+                 de manera sencilla, junto con funciones de respaldo automático, añaden versatilidad a la plataforma. Amazon Drive refuerza 
+                 la seguridad a través de técnicas de cifrado y ofrece opciones de almacenamiento expansibles mediante planes de pago, brindando 
+                 flexibilidad y escalabilidad a sus usuarios.<br>
+                 <b>Ventajas de Amazon Drive:</b>
+
+                 Integración con Amazon Prime: Los miembros de Amazon Prime a menudo obtienen almacenamiento adicional de forma gratuita como parte de su suscripción, lo que puede ser beneficioso para aquellos que ya son miembros de Prime.
+                 
+                 Almacenamiento ilimitado de fotos con Prime: Amazon Drive ofrece almacenamiento ilimitado de fotos para los miembros de Amazon Prime, lo que puede ser útil para respaldar colecciones de fotos.
+                 
+                 Compatibilidad multiplataforma: Amazon Drive es compatible con una variedad de plataformas, incluyendo Windows, macOS, Android e iOS, lo que facilita el acceso a tus archivos desde diferentes dispositivos.
+                 
+                 Compartir archivos y carpetas: Permite compartir fácilmente archivos y carpetas con otras personas, facilitando la colaboración en proyectos.
+                 
+                 Integración con otros servicios de Amazon: Si ya utilizas otros servicios de Amazon, como Kindle, Cloud Cam o Alexa, es posible que encuentres una integración más fluida con Amazon Drive.<br>
+                 
+                <b>Desventajas de Amazon Drive:</b>
+                 
+                 Almacenamiento limitado para no miembros de Prime: Los usuarios que no son miembros de Amazon Prime obtienen un almacenamiento limitado, y es posible que necesiten pagar por planes adicionales si requieren más espacio.
+                 
+                 Interfaz menos intuitiva: Algunos usuarios encuentran que la interfaz de usuario de Amazon Drive es menos intuitiva en comparación con otros servicios de almacenamiento en la nube.
+                 
+                 Funcionalidades limitadas de colaboración: Aunque se pueden compartir archivos, las funciones de colaboración en tiempo real pueden ser limitadas en comparación con otros servicios.
+                 
+                 Aplicaciones móviles menos pulidas: Algunos usuarios han informado que las aplicaciones móviles de Amazon Drive pueden carecer de algunas funciones avanzadas y no ser tan pulidas como las de otros servicios.
+                 
+                 Dependencia de la conexión a Internet: Como con otros servicios en la nube, se necesita una conexión a Internet para acceder a los archivos almacenados en Amazon Drive.
+                </p>
+            <!-- Puedes agregar más contenido según sea necesario -->
+        </div>
+
+        <!-- Área de opiniones a la izquierda -->
+        <section id="opiniones-container" class="opiniones">
+            <!-- Formulario para agregar una opinión -->
+            <form id="opinion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" required></textarea>
+                <button type="button" onclick="agregarOpinion()" class="btn">Opinar</button>
+            </form>
+
+            <!-- Lista de opiniones -->
+            <div id="opiniones-list"></div>
+        </section>
+
+            </main>
+
+    <script src="./Scripts/seccion6-script.js"></script>
+</body>
+</html>
